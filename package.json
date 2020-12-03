@@ -1,0 +1,27 @@
+{
+  "name": "eatdaburger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jesshuang7/eatDaBurger.git"
+  },
+  "keywords": [
+    "eatdaburger"
+  ],
+  "author": "Jessica Huang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jesshuang7/eatDaBurger/issues"
+  },
+  "homepage": "https://github.com/jesshuang7/eatDaBurger#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "mysql": "^2.18.1"
+  }
+}
