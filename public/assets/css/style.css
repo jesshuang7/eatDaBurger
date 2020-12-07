@@ -1,7 +1,9 @@
 li {
   padding: 5px;
-  margin: 5px;
-  background: #faebd7;
+  margin-left: 10px;
+  font-size: 25px;
+  /* background: #faebd7; */
+  /* font-family: 'Secular One', sans-serif; */
 }
 
 .label {
@@ -17,3 +19,84 @@ li {
 .form-group {
   margin-bottom: 5px;
 }
+
+.margin-right {
+  margin-right: 100px;
+}
+
+h1 {
+  color: #d93d0e;
+  text-align: center;
+  font-family: 'Ultra', serif;
+}
+
+#add-burger {
+  font-size: 20px;
+  border-radius: 6px;
+  background-color: #008cba;
+  padding: 12px 30px;
+  color: #f1f1f1;
+  border: none;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  font-family: 'Carter One', cursive;
+  outline: none;
+}
+
+#add-burger:hover{
+  color:#008cba;
+  background-color:#fae9b5;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#devoured-button {
+  background-color: #faebd7;
+  color: black;
+  border: 1px solid #f1f1f1; 
+  padding: 7px 15px;
+  border-radius: 6px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  font-family: 'Carter One', cursive;
+  margin-left: 20px;
+  outline: none;
+}
+
+#devoured-button:hover {
+  background-color: #d93d0e;
+  color: #faebd7;
+}
+
+p {
+  color: #686b72;
+  /* font-family: 'Roboto', sans-serif; */
+  font-size: 15px;
+  font-family: 'Istok Web', sans-serif;
+
+}
+
+body {
+  /* display: flex; */
+  text-align: center;
+  background-color: #ffd070;
+  font-family: 'Nerko One', cursive;
+  font-size: large;
+  /* font-family: 'Ultra', serif; */
+  /* font-family: 'Bungee', cursive; */
+
+}
+
+div {
+  display: flex; 
+  justify-content: space-around;
+  margin-left: auto;
+  /* float: right; */
+}
+
+textarea {
+  resize: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  height: 100px;
+}
+

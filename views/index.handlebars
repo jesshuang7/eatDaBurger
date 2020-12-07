@@ -1,39 +1,46 @@
-<h1>Burgers!</h1>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Carter+One&family=Istok+Web&family=Nerko+One&family=Secular+One&family=Ultra&display=swap" rel="stylesheet">
 
-<h2>Burgers that are not devoured!</h2>
+<img src="https://st.depositphotos.com/1563609/2992/v/950/depositphotos_29926171-stock-illustration-big-burger-fast-food-in.jpg" alt="hamburger-image" width="20%" id="burger-image">
 
-<ul>
+<h1>Welcome to Eat-Da-Burgers!</h1>
+
+<div>
+<ol>
+<h2 class="margin-right">Coming Up Burgers...</h2>
   {{#each burgers}}
     {{#unless devoured}}
       {{> burgers/burger-block devour=true}}
     {{/unless}}
   {{/each}}
-</ul>
+</ol>
 
-<h2>Burgers that are devoured!</h2>
 
-<ul>
+<ol>
+<h2 class="margin-right">Burgers Already Eaten:</h2>
   {{#each burgers}}
     {{#if devoured}}
-    {{!-- devoured/devour = false ?? --}}
       {{> burgers/burger-block devour=false}}
     {{/if}}
   {{/each}}
-</ul>
+</ol>
+</div>
 
-<h2>Add a Burger</h2>
+<h2>Add A Burger</h2>
 <form class="create-form">
 
   <div class="form-group">
-    <label for="bur">Burger Name:</label>
-    <input type="text" id="bur" name="name">
+    <label for="bur"></label>
+    {{!-- <input type="text" id="bur" name="burger_name"> --}}
+    <textarea id="bur" name="burger_name"></textarea>
   </div>
 
-  <div class="form-group">
+  {{!-- <div class="form-group">
     <label for="devo">Devoured?</label><br>
     <input type="radio" name="devoured" value="1" checked> Devoured!<br>
     <input type="radio" name="devoured" value="0"> Not Devoured
-  </div>
-
-  <button type="submit">Add Burger</button>
+  </div> --}}
+    <br>
+  <button id="add-burger" type="submit">Submit</button>
+    <p>Enter a burger you want to eat. Click the submit button</p>
 </form>

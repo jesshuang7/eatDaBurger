@@ -5,7 +5,7 @@ $(function() {
     var newDevour = $(this).data("newdevour");
 
     var newDevourState = {
-      sleepy: newDevour
+      devoured: newDevour
     };
 
     // Send the PUT request.
@@ -26,8 +26,8 @@ $(function() {
     event.preventDefault();
 
     var newBurger = {
-      name: $("#bur").val().trim(),
-      devoured: $("[name=devoured]:checked").val().trim()
+      burger_name: $("#bur").val().trim(),
+      // devoured: $("[name=devoured]:checked").val().trim()
     };
 
     // Send the POST request.
@@ -36,7 +36,7 @@ $(function() {
       data: newBurger
     }).then(
       function() {
-        console.log("created new cat");
+        console.log("created new burger");
         // Reload the page to get the updated list
         location.reload();
       }
